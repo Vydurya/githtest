@@ -12,7 +12,7 @@ export class NewsController {
     }
 
     @Get(':searchkey')
-    searchnews(@Param('searchkey') searchkey:string){
+    searchnews(@Param('searchkey') searchkey:string ){
         return this.newsservice.getarticle(searchkey);
     }
 
