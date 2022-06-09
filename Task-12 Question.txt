@@ -1,0 +1,36 @@
+Hi Good Evening
+@Akhilesh H    @Sarathkumar P S    @Vydurya    @Mons 
+
+Assessment Test 12
+
+1. Create a REST API server with nestjs
+2. Create the following endpoints
+
+Login API
+- endpoint name : /login, Method POST
+- Input body: {email:"", password:""} // JSON object
+- output response  {authenticated :true or false} //Respond with SUCCESS or FAILURE
+- Input data should be validated and corresponding error with correct status code should be send as response.
+- Input request and corresponding response should be logged using middleware in a user friendly manner.
+
+
+API to create a news article
+- endpoint name : /news, Method POST
+- Input body : {headline:"", summary:"", image:"", date:""} // JSON object
+- output response  {message :""} //Respond with SUCCESS or FAILURE
+- Input data should be validated and corresponding error with correct status code should be send as response.
+- Input request and corresponding response should be logged using middleware in a user friendly manner.
+
+API to search news articles
+- endpoint name : /news , Method GET
+- Input param: "searchkey": ""
+- output response  [{headline:"", summary:"",image:"", date:""}] //Array of JSON objects
+- Input data should be validated and corresponding error with correct status code should be send as response.
+- No logger needed here
+
+NOTE: 
+1.Please store these login creds locally in a variable and compare accordingly in the login API.
+Valid Login creds
+email: intern@revyrieglobal.com
+password: intern@123
+2.Output data should be formatted using interceptor.Eg:{statusCode :200,response:[]}
